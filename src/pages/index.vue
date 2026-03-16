@@ -5,7 +5,6 @@
   <br>
   <button @click="generateSandwich">Générer</button>&nbsp;
   <button @click="saveSandwich">Sauvegarder</button>
-
   <h2>Sandwichs sauvegardés</h2>
   <div v-if="user.sandwiches.length === 0">Aucun sandwich sauvegardé</div>
   <div v-else>
