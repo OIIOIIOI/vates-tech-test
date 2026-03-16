@@ -24,7 +24,6 @@
 <script setup lang="ts">
 import { ingredientsStore } from '@/stores/ingredients-store';
 import { computed, ref } from 'vue';
-import MinusIcon from './icons/MinusIcon.vue';
 
 const props = defineProps<{ category: 'breads' | 'sauces' | 'cheeses' | 'fillings' }>()
 
