@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+    --color-green: #00491e;
+    --color-green-light: #98cfae;
+    --color-green-alt: #008938;
+    --color-yellow: #f2b700;
+
+    --font-slab: "Roboto Slab", sans-serif;
+}
+
+@layer base {
+    h1 {
+        @apply font-slab text-3xl font-black underline underline-offset-4 decoration-4 my-6;
+    }
+
+    h2 {
+        @apply font-slab text-2xl font-extrabold my-4;
+    }
+
+    h3 {
+        @apply font-slab text-xl font-bold my-2;
+    }
+
+    p {
+        @apply my-2;
+    }
+
+    input[type="text"] {
+        @apply border-1 border-solid border-green-alt focus:outline focus:outline-green rounded text-sm px-2 py-1;
+    }
+
+    button {
+        @apply font-slab bg-yellow text-black px-2 py-1 rounded text-sm font-bold;
+    }
+
+    select {
+        @apply font-slab bg-yellow text-black px-2 py-1 my-1 rounded text-sm font-bold;
+    }
+}
